@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Public School | About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <style>
+      .menuBarOpen {
+        height: 240px;
+        padding: 16px 16px;
+        transition: all 0.3s;
+      }
+      .menuBarHide {
+        height: 0;
+        padding: 0 16px;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- 🔹 Navbar -->
+    <nav
+      class="bg-gradient-to-r from-green-800 to-green-700 text-white shadow-md sticky top-0 z-50"
+    >
+      <div class="p-4 mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img
+            class="h-14 bg-white rounded-full"
+            src="https://png.pngtree.com/png-clipart/20230623/original/pngtree-school-logo-design-template-vector-png-image_9204124.png"
+            alt="logo"
+          />
+          <h1 class="text-2xl max-sm:text-xl font-bold">Example Public School</h1>
+        </div>
+
+        <ul class="hidden md:flex gap-6">
+          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="about.html" class="text-yellow-300 font-semibold">About</a></li>
+          <li><a href="academics.html" class="hover:text-yellow-300">Academics</a></li>
+          <li><a href="activities.html" class="hover:text-yellow-300">Activities</a></li>
+          <li><a href="admission.html" class="hover:text-yellow-300">Admission</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+
+        <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+      </div>
+
+      <ul
+        id="mobileMenu"
+        class="menuBarHide absolute top-22 left-0 right-0 bg-green-700 overflow-hidden flex flex-col justify-between gap-2 md:hidden"
+      >
+        <li>
+          <a href="index.html" class="block hover:text-yellow-300"
+            ><i class="fa-solid fa-house mr-2"></i> Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html" class="block text-yellow-300 font-semibold"
+            ><i class="fa-solid fa-newspaper mr-2"></i> About</a
+          >
+        </li>
+        <li>
+          <a href="academics.html" class="block hover:text-yellow-300"
+            ><i class="fa-solid fa-award mr-2"></i> Academics</a
+          >
+        </li>
+        <li>
+          <a href="activities.html" class="block hover:text-yellow-300"
+            ><i class="fa-solid fa-person-running mr-2"></i> Activities</a
+          >
+        </li>
+        <li>
+          <a href="admission.html" class="block hover:text-yellow-300"
+            ><i class="fa-solid fa-user-plus mr-2"></i> Admission</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="block hover:text-yellow-300"
+            ><i class="fa-solid fa-address-book mr-2"></i> Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 🔹 Hero Section -->
+    <section
+      class="relative bg-top aspect-[5/2] max-lg:aspect-[3/2] max-sm:aspect-square overflow-hidden flex items-center justify-center text-center text-white"
+    >
+      <img
+        class="absolute -z-10 w-full h-full object-cover"
+        src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHklMjBib29rc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000"
+        alt="About Hero"
+      />
+      <div class="bg-black bg-opacity-50 backdrop-blur-[2px] py-8 px-3 m-5 rounded-lg">
+        <h2 class="text-2xl sm:text-5xl font-bold mb-4">About Our School</h2>
+        <p class="text-lg mb-6 max-sm:text-[0.9rem]">
+          Learn more about our journey, mission, and dedication to education.
+        </p>
+      </div>
+    </section>
+
+    <!-- 🔹 About Content -->
+    <section class="py-16 px-6 md:px-20 bg-white">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold text-green-600 mb-4">
+          Who We Are
+        </h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Example Public School has been serving the community for over a decade,
+          offering holistic education focused on intellectual, emotional, and moral
+          growth. We nurture each child’s potential through a supportive and inclusive
+          learning environment.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <img
+          src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1000&q=60"
+          class="rounded-lg shadow-lg"
+          alt="Campus"
+        />
+        <div>
+          <h4 class="text-2xl font-semibold text-green-700 mb-3">
+            Our Vision
+          </h4>
+          <p class="text-gray-700 leading-relaxed mb-6">
+            To create a nurturing environment that encourages curiosity, creativity, and
+            lifelong learning. We aim to empower students with knowledge, empathy, and a
+            sense of responsibility toward society.
+          </p>
+
+          <h4 class="text-2xl font-semibold text-green-700 mb-3">
+            Our Mission
+          </h4>
+          <p class="text-gray-700 leading-relaxed">
+            We strive to provide quality education that balances academics, character
+            development, and co-curricular excellence. Our goal is to develop confident
+            individuals ready to face future challenges with compassion and leadership.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Faculty Section -->
+    <section class="bg-green-50 py-16 px-6 md:px-20">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold text-green-700 mb-4">Our Faculty</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Our experienced and passionate teachers play a vital role in guiding students
+          toward excellence, fostering creativity, and nurturing confidence.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png"
+            class="w-24 h-24 mx-auto mb-4"
+          />
+          <h4 class="font-bold text-lg mb-1 text-green-700">Mr. Johnson</h4>
+          <p class="text-gray-600">Mathematics Teacher</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+            class="w-24 h-24 mx-auto mb-4"
+          />
+          <h4 class="font-bold text-lg mb-1 text-green-700">Mrs. Sharma</h4>
+          <p class="text-gray-600">Science Teacher</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+            class="w-24 h-24 mx-auto mb-4"
+          />
+          <h4 class="font-bold text-lg mb-1 text-green-700">Mr. Singh</h4>
+          <p class="text-gray-600">English Teacher</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Campus Life Section -->
+    <section class="py-16 px-6 md:px-20 bg-white">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold text-green-700 mb-4">Campus Life</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Our campus offers a vibrant environment filled with opportunities to learn,
+          explore, and grow — both inside and outside the classroom.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <img
+          src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=60"
+          class="rounded-lg shadow-md"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=60"
+          class="rounded-lg shadow-md"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=60"
+          class="rounded-lg shadow-md"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800">
+      <section
+        class="container text-[0.9rem] m-auto grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 p-5 gap-3"
+      >
+        <div class="text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Contact Address</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"
+              ><i class="fa-solid fa-location-dot"></i> Example, Example,
+              790012</a
+            >
+            <p class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-phone"></i> +91-7005123458
+            </p>
+            <p class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-envelope"></i> exampleschool@gmail.com
+            </p>
+            <a class="hover:text-yellow-300 cursor-pointer"
+              ><i class="fa-solid fa-globe"></i> www.exampleschool.com</a
+            >
+          </div>
+        </div>
+
+        <div class="bg-green-800 text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Quick links</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Student's Feedback</a
+            >
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> About us</a
+            >
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Academics</a
+            >
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Activities</a
+            >
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Admission</a
+            >
+          </div>
+        </div>
+
+        <div class="bg-green-800 text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Useful links</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Result</a
+            >
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Announcement</a
+            >
+            <a class="hover:text-yellow-300 cursor-pointer">
+              <i class="fa-solid fa-angle-right"></i> Fees Structure</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-green-900 text-white text-center py-6 text-[0.8rem]">
+        <p>© 2025 Example Public School. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 🔹 JS -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("menuBarHide");
+      });
+    </script>
+  </body>
+</html>
