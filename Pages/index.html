@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Public School | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- 🔹 Navbar -->
+    <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white p-4 shadow-md sticky top-0 z-50">
+      <div class="mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img 
+            class="h-14 bg-white rounded-full"
+            src="https://png.pngtree.com/png-clipart/20230623/original/pngtree-school-logo-design-template-vector-png-image_9204124.png" 
+            alt="logo"
+          >
+          <h1 class="text-2xl max-sm:text-xl font-bold">Example Public School</h1>
+        </div>
+        <ul class="hidden md:flex gap-6">
+          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+          <li><a href="academics.html" class="hover:text-yellow-300">Academics</a></li>
+          <li><a href="activities.html" class="hover:text-yellow-300">Activities</a></li>
+          <li><a href="admission.html" class="hover:text-yellow-300">Admission</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobileMenu"
+        class="hidden flex flex-col gap-2 mt-4 p-4 md:hidden"
+      >
+        <li><a href="index.html" class="block hover:text-yellow-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-yellow-300">About</a></li>
+        <li><a href="academics.html" class="block hover:text-yellow-300">Academics</a></li>
+        <li><a href="activities.html" class="block hover:text-yellow-300">Activities</a></li>
+        <li><a href="admission.html" class="block hover:text-yellow-300">Admission</a></li>
+        <li><a href="contact.html" class="block hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 🔹 Hero Section -->
+    <section class="relative bg-top max-lg:aspect-[3/2] max-sm:aspect-square overflow-hidden aspect-[5/2] flex items-center justify-center text-center text-white">
+      <img class="absolute -z-10 w-full h-full object-cover" src="https://c8.alamy.com/comp/KX38GH/indian-group-school-students-friends-arms-crossed-standing-together-KX38GH.jpg" alt="">
+      <div class="bg-black bg-opacity-50 backdrop-blur-[2px] py-8 px-3 m-5 rounded-lg">
+        <h2 class="text-2xl sm:text-5xl font-bold mb-4">
+          Welcome to <br> Example Public School
+        </h2>
+        <p class="text-lg mb-6 max-sm:text-[0.9rem]">A place where learning meets excellence.</p>
+        <a
+          href="admission.html"
+          class="bg-yellow-400 text-black px-4 sm:py-3 py-2 rounded font-semibold hover:bg-yellow-500 transition"
+          >Apply for Admission</a
+        >
+      </div>
+    </section>
+
+    <!-- Founder & Principal -->
+    <section class="p-5 mt-5">
+      <div class="grid grid-cols-3 gap-4 mb-10 max-md:flex flex-col-reverse">
+        <div class="col-span-2">
+          <h1 class="text-green-600 bg-green-100 text-lg font-semibold inline">Hi! I'm Tomba, The Founder of "Example Public School"</h1>
+          <i class="mt-3 block text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repellat, dolorum vitae consectetur enim molestiae qui reiciendis natus nobis soluta quibusdam odit dolor excepturi, neque, quis consequuntur mollitia? Consequuntur, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt tempora maiores amet numquam, voluptates quos blanditiis corrupti a natus, iure libero sint iste impedit doloremque, explicabo porro illo. Voluptatibus.
+          Vel, modi rerum ab deserunt ducimus omnis. Soluta, esse eaque excepturi voluptatibus, neque autem at, quo quasi dolorum dolor magni beatae placeat voluptate tempore natus doloremque amet saepe iusto impedit.
+          Autem sit, hic architecto voluptatibus deserunt voluptate soluta fuga iure cum repudiandae nam labore corrupti voluptatem explicabo aut incidunt ex perferendis odit libero, dolorum ea. Esse magnam iusto sunt sed!</i>
+        </div>
+        <img src="https://www.jmcschoolgn.edu.in/images/Fr-Saji-Palamattom01.jpg" alt="">
+        <!-- <img src="https://noida.cambridgeschool.edu.in/wp-content/uploads/sites/12/2025/03/Surbhi-Ma_am-OP-12.jpg" alt=""> -->
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 max-md:flex flex-col">
+        <img src="https://noida.cambridgeschool.edu.in/wp-content/uploads/sites/12/2025/03/Surbhi-Ma_am-OP-12.jpg" alt="">
+        <div class="col-span-2">
+          <h1 class="text-green-600 bg-green-100 text-lg font-semibold inline">Hi! I'm Tombi, The Principal of "Example Public School"</h1>
+          <i class="mt-3 block text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repellat, dolorum vitae consectetur enim molestiae qui reiciendis natus nobis soluta quibusdam odit dolor excepturi, neque, quis consequuntur mollitia? Consequuntur, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt tempora maiores amet numquam, voluptates quos blanditiis corrupti a natus, iure libero sint iste impedit doloremque, explicabo porro illo. Voluptatibus.
+          Vel, modi rerum ab deserunt ducimus omnis. Soluta, esse eaque excepturi voluptatibus, neque autem at, quo quasi dolorum dolor magni beatae placeat voluptate tempore natus doloremque amet saepe iusto impedit.
+          Autem sit, hic architecto voluptatibus deserunt voluptate soluta fuga iure cum repudiandae nam labore corrupti voluptatem explicabo aut incidunt ex perferendis odit libero, dolorum ea. Esse magnam iusto sunt sed!</i>
+        </div>
+        <!-- <img src="https://www.jmcschoolgn.edu.in/images/Fr-Saji-Palamattom01.jpg" alt=""> -->
+      </div>
+    </section>
+
+
+    <!-- Award and Achievements -->
+    <section class="bg-green-700 text-white/90 p-5">
+      <h1 class="font-semibold text-yellow-300 text-2xl pb-5">Awards & Achievements</h1>
+      <div id="achievementsContainer" class="min-h-[250px] grid grid-cols-2 max-sm:grid-cols-1 gap-4 items-center">
+        <img class="h-full w-full object-cover" src="https://meghalayamonitor.com/wp-content/uploads/2022/05/IMG_1187-780x470.jpg" alt="">
+        <h1 class="text-6xl max-lg:text-5xl max-sm:text-4xl font-bold">First Runner Up 2020 <br>All Manipur Youth Football</h1>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-6 md:px-20 bg-white">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-bold text-green-600 mb-4">About Our School</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Example Public School is committed to nurturing young minds through
+          academic excellence, moral values, and creative expression. We
+          believe in shaping students to become responsible citizens and
+          lifelong learners.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+        <div class="bg-green-50 p-6 rounded-lg shadow-md text-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+            class="w-16 mx-auto mb-4"
+          />
+          <h4 class="font-bold text-lg mb-2">Experienced Teachers</h4>
+          <p class="text-gray-600">
+            Our qualified and dedicated teachers inspire students to achieve
+            their best potential.
+          </p>
+        </div>
+
+        <div class="bg-green-50 p-6 rounded-lg shadow-md text-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3214/3214712.png"
+            class="w-16 mx-auto mb-4"
+          />
+          <h4 class="font-bold text-lg mb-2">Modern Infrastructure</h4>
+          <p class="text-gray-600">
+            Well-equipped classrooms, science labs, and computer labs for a
+            better learning experience.
+          </p>
+        </div>
+
+        <div class="bg-green-50 p-6 rounded-lg shadow-md text-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png"
+            class="w-16 mx-auto mb-4"
+          />
+          <h4 class="font-bold text-lg mb-2">Co-Curricular Activities</h4>
+          <p class="text-gray-600">
+            Balanced education with sports, music, arts, and leadership
+            programs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-green-700 text-white text-center py-12 px-4">
+      <h3 class="text-3xl font-bold mb-4">Join Our School Today!</h3>
+      <p class="mb-6">
+        Enroll your child for a bright and successful academic journey.
+      </p>
+      <a
+        href="admission.html"
+        class="bg-yellow-400 text-black px-8 py-3 rounded font-semibold hover:bg-yellow-500 transition"
+        >Register Now</a
+      >
+    </section>
+
+
+    <!-- TODO: add links -->
+    <!-- Footer -->
+    <footer class="bg-green-800">
+      <section class="container text-[0.9rem] m-auto grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 p-5 gap-3">
+        <div class="text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Contact Address</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-location-dot"></i> Example, Example, 790012</a>
+            <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-phone"></i> +91-7005123458</p>
+            <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-envelope"></i> exampleschool@gmail.com</p>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-globe"></i> www.exampleschool.com</a>
+          </div>
+        </div>
+  
+        <div class="bg-green-800 text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Quick links</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Student's Feedback</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> About us</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Academics</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Activities</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Admission</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Terms & Conditions</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Refund policy</a>  
+          </div>
+        </div>
+
+        <div class="bg-green-800 text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Useful links</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Result</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Announcement</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Fees Structure</a>
+            <a class="hover:text-yellow-300 cursor-pointer"> <i class="fa-solid fa-angle-right"></i> Report</a> 
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-green-900 text-white text-center py-6 text-[0.8rem]">
+        <p>© 2025 Example Public School. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    
+
+
+
+
+
+
+
+
+    <!-- 🔹 JavaScript (for Mobile Menu) -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+
+      const track = document.getElementById("achievementTrack");
+      let index = 0;
+
+      function autoScroll1() {
+        const slides = track.children.length;
+        const isMobile = window.innerWidth < 768; // Tailwind md breakpoint
+        const visibleCount = isMobile ? 1 : 2;
+        index = (index + 1) % (slides - visibleCount + 1);
+        const offset = index * (track.children[0].offsetWidth + 24); // 24 = gap-6
+        track.style.transform = `translateX(-${offset}px)`;
+      }
+
+      setInterval(autoScroll1, 3000); // Every 3 seconds
+
+      // Reset position when window resizes (responsive fix)
+      window.addEventListener("resize", () => {
+        track.style.transform = "translateX(0)";
+        index = 0;
+      });
+
+      const achievements = [
+        {
+          img: "https://meghalayamonitor.com/wp-content/uploads/2022/05/IMG_1187-780x470.jpg",
+          text: "First Runner Up 2020 All Manipur Youth Football"
+        },
+        {
+          img: "https://www.e-pao.org/galleries/images/News_Related/2015/09/Meoldy_20150928.jpg",
+          text: "1st Position in Painting Compitition 2022 by Lion's Club"
+        },
+        {
+          img: "https://content3.jdmagicbox.com/v2/comp/imphal/a6/9999p3852.3852.220520223700.q7a6/catalogue/tamphasana-girls-higher-secondary-school-manipur-imphal-schools-i4zly93wz9.jpg",
+          text: "Position Holder & Subject Toppers in HSLCE 2024"
+        }
+      ]
+
+      let achievementsIndex = 1;
+      const achievementsContainer = document.getElementById("achievementsContainer");
+      function autoScroll(achievements) {
+        achievementsContainer.innerHTML = `
+          <img class="h-full w-full object-cover" src="${achievements[achievementsIndex%achievements.length].img}" alt="">
+          <h1 class="text-6xl max-lg:text-5xl max-sm:text-4xl font-bold">${achievements[achievementsIndex%achievements.length].text}</h1>
+        `;
+        achievementsIndex++; 
+      }
+
+      setInterval(() => autoScroll(achievements), 4000);
+
+
+
+    </script>
+  </body>
+</html>
