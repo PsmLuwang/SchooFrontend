@@ -6,11 +6,22 @@
     <title>Example Public School | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+      .menuBarOpen {
+        height: 240px;
+        padding: 16px 16px;
+        transition: all 0.3s;
+      }
+      .menuBarHide {
+        height: 0;
+        padding: 0 16px;
+      }
+    </style>
   </head>
   <body class="font-sans bg-gray-50 text-gray-800">
     <!-- 🔹 Navbar -->
-    <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white p-4 shadow-md sticky top-0 z-50">
-      <div class="mx-auto flex justify-between items-center">
+    <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white shadow-md sticky top-0 z-50">
+      <div class="p-4 mx-auto flex justify-between items-center">
         <div class="flex items-center gap-3">
           <img 
             class="h-14 bg-white rounded-full"
@@ -37,14 +48,14 @@
       <!-- Mobile Menu -->
       <ul
         id="mobileMenu"
-        class="hidden flex flex-col gap-2 mt-4 p-4 md:hidden"
+        class="menuBarOpen absolute top-22 left-0 right-0 bg-green-700 overflow-hidden flex flex-col justify-between gap-2 md:hidden"
       >
-        <li><a href="index.html" class="block hover:text-yellow-300">Home</a></li>
-        <li><a href="about.html" class="block hover:text-yellow-300">About</a></li>
-        <li><a href="academics.html" class="block hover:text-yellow-300">Academics</a></li>
-        <li><a href="activities.html" class="block hover:text-yellow-300">Activities</a></li>
-        <li><a href="admission.html" class="block hover:text-yellow-300">Admission</a></li>
-        <li><a href="contact.html" class="block hover:text-yellow-300">Contact</a></li>
+        <li><a href="index.html" class="block hover:text-yellow-300"><i class="fa-solid fa-house mr-2"></i> Home</a></li>
+        <li><a href="about.html" class="block hover:text-yellow-300"><i class="fa-solid fa-newspaper mr-2"></i> About</a></li>
+        <li><a href="academics.html" class="block hover:text-yellow-300"><i class="fa-solid fa-award mr-2"></i> Academics</a></li>
+        <li><a href="activities.html" class="block hover:text-yellow-300"><i class="fa-solid fa-person-running mr-2"></i> Activities</a></li>
+        <li><a href="admission.html" class="block hover:text-yellow-300"><i class="fa-solid fa-user-plus mr-2"></i> Admission</a></li>
+        <li><a href="contact.html" class="block hover:text-yellow-300"><i class="fa-solid fa-address-book mr-2"></i> Contact</a></li>
       </ul>
     </nav>
 
@@ -223,7 +234,7 @@
       const mobileMenu = document.getElementById("mobileMenu");
 
       menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("menuBarHide");
       });
 
 
