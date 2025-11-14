@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Public School | Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+      .menuBarOpen {
+        height: 240px;
+        padding: 16px 16px;
+        transition: all 0.3s;
+      }
+      .menuBarHide {
+        height: 0;
+        padding: 0 16px;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white shadow-md sticky top-0 z-50">
+      <div class="p-4 mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3">
+          <img 
+            class="h-14 bg-white rounded-full"
+            src="https://png.pngtree.com/png-clipart/20230623/original/pngtree-school-logo-design-template-vector-png-image_9204124.png" 
+            alt="logo"
+          >
+          <h1 class="text-2xl max-sm:text-xl font-bold">Example Public School</h1>
+        </a>
+
+        <ul class="hidden md:flex gap-6">
+          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+          <li><a href="academics.html" class="hover:text-yellow-300">Academics</a></li>
+          <li><a href="activities.html" class="hover:text-yellow-300">Activities</a></li>
+          <li><a href="admission.html" class="hover:text-yellow-300">Admission</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+
+        <button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+      </div>
+
+      <ul
+        id="mobileMenu"
+        class="menuBarOpen menuBarHide absolute top-22 left-0 right-0 bg-green-700 overflow-hidden flex flex-col justify-between gap-2 md:hidden"
+      >
+        <li><a href="index.html" class="block hover:text-yellow-300"><i class="fa-solid fa-house mr-2"></i> Home</a></li>
+        <li><a href="about.html" class="block hover:text-yellow-300"><i class="fa-solid fa-newspaper mr-2"></i> About</a></li>
+        <li><a href="academics.html" class="block hover:text-yellow-300"><i class="fa-solid fa-award mr-2"></i> Academics</a></li>
+        <li><a href="activities.html" class="block hover:text-yellow-300"><i class="fa-solid fa-person-running mr-2"></i> Activities</a></li>
+        <li><a href="admission.html" class="block hover:text-yellow-300"><i class="fa-solid fa-user-plus mr-2"></i> Admission</a></li>
+        <li><a href="contact.html" class="block hover:text-yellow-300"><i class="fa-solid fa-address-book mr-2"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-green-700 text-white py-16 text-center">
+      <h2 class="text-4xl font-bold">Contact Us</h2>
+      <p class="mt-2 text-white/90">We are always here to help you</p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="p-6 md:p-16 my-10">
+
+      <div class="grid md:grid-cols-2 gap-10">
+        
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-lg shadow-md border">
+          <h3 class="text-2xl font-semibold text-green-700 mb-4">Send us a message</h3>
+
+          <form class="flex flex-col gap-4">
+            <div>
+              <label class="block text-gray-700 font-medium">Your Name</label>
+              <input type="text" class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-green-600 outline-none" required>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium">Email Address</label>
+              <input type="email" class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-green-600 outline-none" required>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium">Phone Number</label>
+              <input type="text" class="w-full border rounded px-4 py-2 focus:ring-2 focus:ring-green-600 outline-none" required>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium">Message</label>
+              <textarea class="w-full border rounded px-4 py-2 h-28 focus:ring-2 focus:ring-green-600 outline-none" required></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="bg-green-50 p-8 rounded-lg border shadow-md">
+          <h3 class="text-2xl font-semibold text-green-700 mb-4">Contact Information</h3>
+
+          <div class="flex flex-col gap-4 text-gray-700">
+
+            <p>
+              <i class="fa-solid fa-location-dot text-green-700 mr-2"></i>
+              Example, Example, 790012
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone text-green-700 mr-2"></i>
+              +91-7005123458
+            </p>
+
+            <p>
+              <i class="fa-solid fa-envelope text-green-700 mr-2"></i>
+              exampleschool@gmail.com
+            </p>
+
+            <p>
+              <i class="fa-solid fa-globe text-green-700 mr-2"></i>
+              www.exampleschool.com
+            </p>
+
+            <hr class="my-4">
+
+            <h4 class="font-semibold text-xl text-green-700">School Hours</h4>
+            <p>Mon – Sat: 9:00 AM – 3:00 PM</p>
+            <p>Sunday: Closed</p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Google Map -->
+      <div class="mt-12">
+        <iframe
+          class="w-full h-80 lg:h-[460px] rounded-lg shadow-md"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.4645651600604!2d93.93150467514813!3d24.745255978004693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374925c4d436ba67%3A0x1797f49847bf58f9!2sStandard%20Robarth%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1763096872998!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-green-800">
+      <section class="container text-[0.9rem] m-auto grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 p-5 gap-3">
+        <div class="text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Contact Address</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-location-dot"></i> Example, Example, 790012</a>
+            <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-phone"></i> +91-7005123458</p>
+            <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-envelope"></i> exampleschool@gmail.com</p>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-globe"></i> www.exampleschool.com</a>
+          </div>
+        </div>
+  
+        <div class="text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Quick links</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Student's Feedback</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> About us</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Academics</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Activities</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Admission</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Refund policy</a>  
+          </div>
+        </div>
+
+        <div class="text-white/90">
+          <h1 class="text-yellow-300 font-semibold text-lg">Useful links</h1>
+          <div class="flex flex-col gap-2 p-2">
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Result</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Announcement</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Fees Structure</a>
+            <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Report</a> 
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-green-900 text-white text-center py-6 text-[0.8rem]">
+        <p>© 2025 Example Public School. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("menuBarHide");
+      });
+    </script>
+
+  </body>
+</html>
