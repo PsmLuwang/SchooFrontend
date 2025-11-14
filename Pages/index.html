@@ -19,7 +19,7 @@
     </style>
   </head>
   <body class="font-sans bg-gray-50 text-gray-800">
-    <!-- 🔹 Navbar -->
+    <!-- Navbar -->
     <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white shadow-md sticky top-0 z-50">
       <div class="p-4 mx-auto flex justify-between items-center">
         <div class="flex items-center gap-3">
@@ -48,7 +48,7 @@
       <!-- Mobile Menu -->
       <ul
         id="mobileMenu"
-        class="menuBarOpen absolute top-22 left-0 right-0 bg-green-700 overflow-hidden flex flex-col justify-between gap-2 md:hidden"
+        class="menuBarOpen menuBarHide absolute top-22 left-0 right-0 bg-green-700 overflow-hidden flex flex-col justify-between gap-2 md:hidden"
       >
         <li><a href="index.html" class="block hover:text-yellow-300"><i class="fa-solid fa-house mr-2"></i> Home</a></li>
         <li><a href="about.html" class="block hover:text-yellow-300"><i class="fa-solid fa-newspaper mr-2"></i> About</a></li>
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="bg-green-700 text-white text-center py-12 px-4">
+    <section class="bg-green-50 text-green-700 text-center py-12 px-4">
       <h3 class="text-3xl font-bold mb-4">Join Our School Today!</h3>
       <p class="mb-6">
         Enroll your child for a bright and successful academic journey.
@@ -222,40 +222,12 @@
     
 
 
-
-
-
-
-
-
-    <!-- 🔹 JavaScript (for Mobile Menu) -->
     <script>
       const menuBtn = document.getElementById("menuBtn");
       const mobileMenu = document.getElementById("mobileMenu");
 
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("menuBarHide");
-      });
-
-
-      const track = document.getElementById("achievementTrack");
-      let index = 0;
-
-      function autoScroll1() {
-        const slides = track.children.length;
-        const isMobile = window.innerWidth < 768; // Tailwind md breakpoint
-        const visibleCount = isMobile ? 1 : 2;
-        index = (index + 1) % (slides - visibleCount + 1);
-        const offset = index * (track.children[0].offsetWidth + 24); // 24 = gap-6
-        track.style.transform = `translateX(-${offset}px)`;
-      }
-
-      setInterval(autoScroll1, 3000); // Every 3 seconds
-
-      // Reset position when window resizes (responsive fix)
-      window.addEventListener("resize", () => {
-        track.style.transform = "translateX(0)";
-        index = 0;
       });
 
       const achievements = [
@@ -284,8 +256,6 @@
       }
 
       setInterval(() => autoScroll(achievements), 4000);
-
-
 
     </script>
   </body>
