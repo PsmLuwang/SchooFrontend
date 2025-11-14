@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example Public School | Academics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <style>
+    .menuBarOpen {
+      height: 240px;
+      padding: 16px 16px;
+      transition: all 0.3s;
+    }
+    .menuBarHide {
+      height: 0;
+      padding: 0 16px;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white shadow-md sticky top-0 z-50">
+    <div class="p-4 mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img 
+          class="h-14 bg-white rounded-full"
+          src="https://png.pngtree.com/png-clipart/20230623/original/pngtree-school-logo-design-template-vector-png-image_9204124.png" 
+          alt="logo"
+        >
+        <h1 class="text-2xl max-sm:text-xl font-bold">Example Public School</h1>
+      </div>
+
+      <ul class="hidden md:flex gap-6">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+        <li><a href="academics.html" class="hover:text-yellow-300">Academics</a></li>
+        <li><a href="activities.html" class="hover:text-yellow-300">Activities</a></li>
+        <li><a href="admission.html" class="hover:text-yellow-300">Admission</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+    </div>
+
+    <ul id="mobileMenu"
+        class="menuBarOpen menuBarHide absolute top-22 left-0 right-0 bg-green-700 overflow-hidden flex flex-col gap-2 md:hidden">
+      <li><a href="index.html" class="block hover:text-yellow-300"><i class="fa-solid fa-house mr-2"></i> Home</a></li>
+      <li><a href="about.html" class="block hover:text-yellow-300"><i class="fa-solid fa-newspaper mr-2"></i> About</a></li>
+      <li><a href="academics.html" class="block hover:text-yellow-300"><i class="fa-solid fa-award mr-2"></i> Academics</a></li>
+      <li><a href="activities.html" class="block hover:text-yellow-300"><i class="fa-solid fa-person-running mr-2"></i> Activities</a></li>
+      <li><a href="admission.html" class="block hover:text-yellow-300"><i class="fa-solid fa-user-plus mr-2"></i> Admission</a></li>
+      <li><a href="contact.html" class="block hover:text-yellow-300"><i class="fa-solid fa-address-book mr-2"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section class="relative bg-green-700 text-white py-16 shadow-md text-center">
+    <h2 class="text-4xl font-bold">Academics</h2>
+    <p class="mt-3 text-lg max-w-xl mx-auto">
+      High-quality education with a structured curriculum designed for every child’s growth.
+    </p>
+  </section>
+
+  <!-- Academic Levels -->
+  <section class="p-6 md:p-16">
+    <h3 class="text-3xl font-bold text-green-700 text-center mb-10">Our Academic Programs</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Pre-Primary -->
+      <div class="bg-green-50 rounded-lg shadow-md p-8 hover:shadow-lg transition border border-gray-300 hover:-translate-y-1">
+        <img src="https://cdn-icons-png.flaticon.com/512/3074/3074624.png" class="w-20 mx-auto mb-4" />
+        <h4 class="text-xl font-bold text-green-700 text-center mb-3">Pre-Primary</h4>
+        <p class="text-gray-700 text-center">
+          Focus on foundational learning through activities that enhance creativity and social skills.
+        </p>
+      </div>
+
+      <!-- Primary -->
+      <div class="bg-green-50 rounded-lg shadow-md p-8 hover:shadow-lg transition border border-gray-300 hover:-translate-y-1">
+        <img src="https://cdn-icons-png.flaticon.com/512/2942/2942924.png" class="w-20 mx-auto mb-4" />
+        <h4 class="text-xl font-bold text-green-700 text-center mb-3">Primary School</h4>
+        <p class="text-gray-700 text-center">
+          Strengthening core subjects like English, Mathematics, Science and EVS.
+        </p>
+      </div>
+
+      <!-- Middle -->
+      <div class="bg-green-50 rounded-lg shadow-md p-8 hover:shadow-lg transition border border-gray-300 hover:-translate-y-1">
+        <img src="https://cdn-icons-png.flaticon.com/512/3159/3159310.png" class="w-20 mx-auto mb-4" />
+        <h4 class="text-xl font-bold text-green-700 text-center mb-3">Middle School</h4>
+        <p class="text-gray-700 text-center">
+          Enhancing logical reasoning, analytical thinking and preparing for senior classes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Curriculum Details -->
+  <section class="bg-green-100 p-6 md:p-16">
+    <h3 class="text-3xl font-bold text-green-700 mb-10 text-center">Curriculum Overview</h3>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <h4 class="font-bold text-xl text-green-700 mb-2">Subjects Offered</h4>
+        <ul class="list-disc ml-5 text-gray-700 leading-7">
+          <li>English, Mathematics, Science</li>
+          <li>Social Studies, Computer Science</li>
+          <li>Environmental Studies</li>
+          <li>Physical Education</li>
+          <li>Art & Craft, Music</li>
+        </ul>
+      </div>
+
+      <div class="bg-white shadow-md p-6 rounded-lg">
+        <h4 class="font-bold text-xl text-green-700 mb-2">Teaching Methods</h4>
+        <ul class="list-disc ml-5 text-gray-700 leading-7">
+          <li>Activity-based learning</li>
+          <li>Smart classroom integration</li>
+          <li>Hands-on experiments</li>
+          <li>Weekly assessments</li>
+          <li>Group projects & presentations</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-green-50 text-green-700 text-center py-12 px-4">
+    <h3 class="text-3xl font-bold mb-4">Want to Know More?</h3>
+    <p class="mb-6">Explore the full curriculum and admission process.</p>
+    <a href="admission.html"
+      class="bg-yellow-400 text-black px-8 py-3 rounded font-semibold hover:bg-yellow-500 transition">
+      Apply for Admission
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-800">
+    <section class="container text-[0.9rem] m-auto grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 p-5 gap-3">
+      <div class="text-white/90">
+        <h1 class="text-yellow-300 font-semibold text-lg">Contact Address</h1>
+        <div class="flex flex-col gap-2 p-2">
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-location-dot"></i> Example, Example, 790012</a>
+          <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-phone"></i> +91-7005123458</p>
+          <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-envelope"></i> exampleschool@gmail.com</p>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-globe"></i> www.exampleschool.com</a>
+        </div>
+      </div>
+
+      <div class="bg-green-800 text-white/90">
+        <h1 class="text-yellow-300 font-semibold text-lg">Quick links</h1>
+        <div class="flex flex-col gap-2 p-2">
+          <a class="hover:text-yellow-300 cursor-pointer">Student's Feedback</a>
+          <a class="hover:text-yellow-300 cursor-pointer">About us</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Academics</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Activities</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Admission</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Terms & Conditions</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Refund policy</a>  
+        </div>
+      </div>
+
+      <div class="bg-green-800 text-white/90">
+        <h1 class="text-yellow-300 font-semibold text-lg">Useful links</h1>
+        <div class="flex flex-col gap-2 p-2">
+          <a class="hover:text-yellow-300 cursor-pointer">Result</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Announcement</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Fees Structure</a>
+          <a class="hover:text-yellow-300 cursor-pointer">Report</a> 
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-green-900 text-white text-center py-6 text-[0.8rem]">
+      <p>© 2025 Example Public School. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("menuBarHide");
+    });
+  </script>
+
+</body>
+</html>
