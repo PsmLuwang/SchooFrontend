@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission | Example Public School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+    .menuBarOpen {
+      height: 240px;
+      padding: 16px 16px;
+      transition: all 0.3s;
+    }
+    .menuBarHide {
+      height: 0;
+      padding: 0 16px;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-green-800 to-green-700 text-white shadow-md sticky top-0 z-50">
+    <div class="p-4 mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img 
+          class="h-14 bg-white rounded-full"
+          src="https://png.pngtree.com/png-clipart/20230623/original/pngtree-school-logo-design-template-vector-png-image_9204124.png" 
+          alt="logo"
+        >
+        <h1 class="text-2xl max-sm:text-xl font-bold">Example Public School</h1>
+      </a>
+
+      <ul class="hidden md:flex gap-6">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+        <li><a href="academics.html" class="hover:text-yellow-300">Academics</a></li>
+        <li><a href="activities.html" class="hover:text-yellow-300">Activities</a></li>
+        <li><a href="admission.html" class="hover:text-yellow-300">Admission</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+
+      <button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobileMenu"
+      class="menuBarOpen menuBarHide absolute left-0 right-0 bg-green-700 overflow-hidden flex justify-between flex-col gap-2 md:hidden">
+      <li><a href="index.html" class="block hover:text-yellow-300"><i class="fa-solid fa-house mr-2"></i> Home</a></li>
+      <li><a href="about.html" class="block hover:text-yellow-300"><i class="fa-solid fa-newspaper mr-2"></i> About</a></li>
+      <li><a href="academics.html" class="block hover:text-yellow-300"><i class="fa-solid fa-award mr-2"></i> Academics</a></li>
+      <li><a href="activities.html" class="block hover:text-yellow-300"><i class="fa-solid fa-person-running mr-2"></i> Activities</a></li>
+      <li><a href="admission.html" class="block hover:text-yellow-300"><i class="fa-solid fa-user-plus mr-2"></i> Admission</a></li>
+      <li><a href="contact.html" class="block hover:text-yellow-300"><i class="fa-solid fa-address-book mr-2"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-green-700 text-white py-14 text-center">
+    <h1 class="text-4xl font-bold">Admission Form</h1>
+    <p class="mt-2">Register your child for a bright future</p>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="py-16 px-6 md:px-16 lg:px-40">
+    <div class="bg-white shadow-lg rounded-lg p-8 border-t-4 border-green-600">
+      <h2 class="text-2xl font-bold text-green-700 mb-6">Student Registration</h2>
+
+      <form class="grid md:grid-cols-2 gap-6">
+
+        <!-- Full Name -->
+        <div>
+          <label class="font-semibold text-gray-700">Student Name</label>
+          <input type="text" class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-green-600" placeholder="Enter full name">
+        </div>
+
+        <!-- Class -->
+        <div>
+          <label class="font-semibold text-gray-700">Class Applying For</label>
+          <select class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-green-600">
+            <option>Select Class</option>
+            <option>Nursery</option>
+            <option>LKG</option>
+            <option>UKG</option>
+            <option>Class 1</option>
+            <option>Class 2</option>
+            <option>Class 3</option>
+            <option>Class 4</option>
+            <option>Class 5</option>
+            <option>Class 6</option>
+            <option>Class 7</option>
+            <option>Class 8</option>
+            <option>Class 9</option>
+            <option>Class 10</option>
+          </select>
+        </div>
+
+        <!-- DOB -->
+        <div>
+          <label class="font-semibold text-gray-700">Date of Birth</label>
+          <input type="date" class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-green-600">
+        </div>
+
+        <!-- Gender -->
+        <div>
+          <label class="font-semibold text-gray-700">Gender</label>
+          <select class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-green-600">
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <!-- Parent Name -->
+        <div>
+          <label class="font-semibold text-gray-700">Parent/Guardian Name</label>
+          <input type="text" class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-green-600" placeholder="Enter name">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="font-semibold text-gray-700">Phone Number</label>
+          <input type="text" class="w-full mt-1 p-3 border rounded focus:outline-none focus:border-green-600" placeholder="Enter phone number">
+        </div>
+
+        <!-- Address -->
+        <div class="md:col-span-2">
+          <label class="font-semibold text-gray-700">Address</label>
+          <textarea class="w-full mt-1 p-3 border rounded h-24 focus:outline-none focus:border-green-600" placeholder="Enter your address"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="md:col-span-2 text-center mt-4">
+          <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded transition">
+            Submit Registration
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-800">
+    <section class="container text-[0.9rem] m-auto grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 p-5 gap-3">
+      <div class="text-white/90">
+        <h1 class="text-yellow-300 font-semibold text-lg">Contact Address</h1>
+        <div class="flex flex-col gap-2 p-2">
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-location-dot"></i> Example, Example, 790012</a>
+          <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-phone"></i> +91-7005123458</p>
+          <p class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-envelope"></i> exampleschool@gmail.com</p>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-globe"></i> www.exampleschool.com</a>
+        </div>
+      </div>
+
+      <div class="bg-green-800 text-white/90">
+        <h1 class="text-yellow-300 font-semibold text-lg">Quick links</h1>
+        <div class="flex flex-col gap-2 p-2">
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Student's Feedback</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> About us</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Academics</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Activities</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Admission</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a>
+        </div>
+      </div>
+
+      <div class="bg-green-800 text-white/90">
+        <h1 class="text-yellow-300 font-semibold text-lg">Useful links</h1>
+        <div class="flex flex-col gap-2 p-2">
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Result</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Announcement</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Fees Structure</a>
+          <a class="hover:text-yellow-300 cursor-pointer"><i class="fa-solid fa-angle-right"></i> Report</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-green-900 text-white text-center py-6 text-[0.8rem]">
+      <p>© 2025 Example Public School. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("menuBarHide");
+    });
+  </script>
+
+</body>
+</html>
